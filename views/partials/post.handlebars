@@ -1,0 +1,12 @@
+<div class="post">
+  <h2>{{postTitle}}</h2>
+  <p>{{postContent}}</p>
+  <p>Posted by: {{postAuthor}}</p>
+  <p>Posted on: {{postDate}}</p>
+
+  <div class="comments">
+    {{#each comments}}
+      {{> comment}}
+    {{/each}}
+  </div>
+</div>
